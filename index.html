@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head ng-app="app">
+  <title>Tarabytes Of Code</title>
+    <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
+</head>
+<body>
+  <nav class="navbar navbar-default navbar-inverse navbar-fixed-top" data-spy="scroll">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a href="#home" class="btn btn-primary navbar-btn">Home</a>
+      </div>
+      <div class="navbar-right">
+        <a class="navbar-brand" href="#about-me">About Me</a>
+        <a class="navbar-brand" href="#projects">Projects</a>
+        <a class="navbar-brand" href="#resume">Resume</a>
+        <a class="navbar-brand" href="#contact-info">Contact Info</a>
+      </div>
+
+    </div>
+  </nav>
+
+  <div class="jumbotron" id="home">
+    <div class="container"> <h1> Hi </h1></div>
+  </div>
+
+
+  <!-- <div class="page-header"> -->
+  <div class="container-fluid">
+    <div id="about-me">
+      <br>
+      <br>
+      <br>
+      <h1 class="text-center"> About Me </h1>
+      <br>
+      <div class="col-md-1"> </div>
+      <div class="col-md-5">
+        <h4>I'm a Los Angeles based web developer from New Jersey who first learned to code by creating a calculator in Visual Basic with
+        my dad when I was 10-years-old. After coding in high school a bit, I took a break from programming to attend
+        USC's School of Cinematic Arts. I worked in the entertainment industry for about 10 years, starting as an
+        assistant on Battlestar Galactica. Most recently, I worked as a Creative Executive at a company that produces
+        horror films. I rejuvenated my passion for programming this fall at General Assembly's Web Development
+        Immersive and fell in love with coding all over again.  I have an unhealthy love for DC superheroes,
+        boardgames and a passion for cooking. Watch out - I can now pun in 4 languages!
+        </h4>
+      </div>
+      <div class="col-md-6">
+        <img src="assets/headshot.jpg" class="center-block" id="headshot">
+      </div>
+      <div class="col-md-6">
+      </div>
+    </div>
+
+  </div>
+  <!-- </div> -->
+
+
+      <div id="projects" data-spy="scroll" data-target=".navbar">
+    <div class="container-fluid">
+        <br>
+        <br>
+        <br>
+        <h1 class="text-center">Projects </h1>
+        <div class="row">
+          <br>
+          <div class="col-md-1"> </div>
+          <div class="col-md-5">
+            <h3 class="text-center"> Chef's Hat </h3>
+            <p> Chef's Hat is an app geared towards helping users share their secret family recipes with their friends and
+            family. The app was created using Ruby on Rails, PostgreSQL and Active-Record. Emphasis was put on user
+            authentication and authorization - don't let those family secrets get out to the public! </p>
+          </div>
+          <div class="col-md-5">
+            <img src="assets/chefshat.png" class="center-block project-img img-responsive">
+            <br>
+          </div>
+          <div class="col-md-1"> </div>
+        </div>
+
+        <div class="row">
+          <br>
+          <div class="col-md-1"> </div>
+          <div class="col-md-5">
+             <h3 class="text-center"> ConShareto </h3>
+             <p> ConShareto is a concert-tracking website to help the avid music-lover find and keep track of concerts.
+              This was a group project built by myself and 4 other students from my cohort at General Assembly. The app
+              uses Node.js, Express, MongoDB, the Jambase API and Google Oauth. My role in the project was primarily
+              working with MongoDB schemas, controllers as well as implementing Google Oauth.
+          </div>
+          <div class="col-md-5">
+            <img src="assets/conshareto.png" class="center-block project-img img-responsive">
+            <br>
+          </div>
+          <div class="col-md-1"> </div>
+        </div>
+
+        <div class="row">
+          <br>
+          <div class="col-md-1"> </div>
+          <div class="col-md-5">
+             <h3 class="text-center"> 2048 Crisis </h3>
+             <p> 2048 Crisis is the very first web project I ever made. It used HTML, CSS, javasrscipt and jQuery. As a
+             huge fan of both puzzles and DC superheroes, I decided to put my two passions together and make a themed
+             game-clone of 2048. My emphasis went to flexing my javascript muscles and writing the game logic from
+             scratch. </p>
+          </div>
+          <div class="col-md-5">
+            <img src="assets/2048.png" class="center-block project-img img-responsive">
+            <br>
+          </div>
+          <div class="col-md-1"> </div>
+        </div>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <div id="contact-info" data-spy="scroll" data-target=".navbar">
+      <br>
+      <br>
+      <br>
+      <h1 class="text-center">Contact Info </h1>
+      <br>
+      <div class="row">
+        <div class="col-md-1"> </div>
+        <div class="col-md-5 text-center">
+          <h3> Need a website designed? Want to talk about cool game logic? Or just have something punny to say? Give me a shout! </h3>
+          <br>
+          <a href="mailto:tara.m.strauss@gmail.com" ><h4>tara.m.strauss@gmail.com</h4></a>
+        </div>
+        <div class="col-md-6 text-center">
+          <h3> You can also find me here or check out my work: </h3>
+          <br>
+          <a href="http://github.com/tarastrauss"><img src="assets/github.png" class="github-img"></a>
+          <a href="http://linkedin.com/in/tarabytesofcode"><img src="assets/linkedin.png" class="contact-img"></a>
+          <a href="http://twitter.com/tarabytesoflife"><img src="assets/twitter.png" class="contact-img"></a>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
