@@ -39,6 +39,8 @@ body {
 
   /*overflow-y: scroll;*/
   color: #2E2E2E;
+  margin-top: -100px;
+  margin-bottom: 94px;
 }
 
 #contact-info{
@@ -46,7 +48,7 @@ body {
 }
 
 #home{
-  height: 650px;
+  height: 100vh;
   display: block;
 }
 
@@ -60,7 +62,7 @@ body {
 
 .project-img {
   /*box-shadow: 6px 6px grey;*/
-  margin-top: 30px;
+  margin-top: 10px;
 }
 
 .about-me-head{
@@ -69,10 +71,12 @@ body {
 
 #projects{
   height: 100%;
+
 }
 
 #about-me{
   height: 100%;
+  padding-bottom: 80px;
 }
 
 .github-img{
@@ -87,6 +91,7 @@ body {
 }
 
 .row {
+  padding: 10px 0 10px 0;
   margin-bottom: 70px;
 }
 #space{
@@ -116,10 +121,13 @@ body {
   border-radius: 10px;
   color: orange;
   margin-top: 120px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   background: #F2F2F2;
 }
+.grey{
+  background-color: #EEEEEE;
 
+}
 .proj{
   width: 165px;
 }
@@ -143,18 +151,19 @@ body {
 /*  color: #2E2EFE;*/
 }
 
-.column{
-  width: 102px;
+.special{
+  width: 25%;
   height: 110px;
-  display: inline-block;
+  display: inline-block; !important
   /*color: rgba(0,0,0,0);*/
 
 }
 
-.header-row{
+.head-row{
   height: 110px;
   width: 100%;
-  overflow: hidden;
+  /*overflow: hidden;*/
+
 }
 
 

@@ -6,19 +6,38 @@ $(document).ready(function(){
         $('.navbar a').removeClass('active');
         $(this).addClass('active');
      });
- // $column = $('.column');
+ $special = $('.special');
 
-  // $column.on('mouseover', function(){
-  //   console.log('moused over');
-  //   var $this = $(this);
-  //   // $(this).html('hello world');
-  // //  $this.fadeIn('slow');
-  //   setTimeout(function(){
-  //     $this.fadeIn(150).delay(2000).fadeOut(300).delay(1254);
-  //      console.log('hi!');
-  //      // $(this).html('');
-  //    }, 500);
-  // });
+  $special.on('mouseover', function(){
+    console.log('moused over');
+    var $this = $(this);
+    var randomNum = Math.floor((Math.random() * 6) + 1);
+    console.log(randomNum);
+    if ($this.html() === ''){
+      switch(randomNum) {
+        case 1: $this.hide().html('<span class="label label-primary fadeInDown animated">Bootstrap</span>').fadeIn('slow').fadeOut('slow');
+          break;
+        case 2: $this.hide().html('<span class="label label-success">Javascript</span>').fadeIn('slow').fadeOut('slow');
+          break;
+        case 3: $this.hide().html('<span class="label label-info">Mean Stack</span>').fadeIn('slow').fadeOut('slow');
+          break;
+        case 4: $this.hide().html('<span class="label label-danger">Ruby on Rails</span>').fadeIn('slow').fadeOut('slow');
+          break;
+        case 5: $this.hide().html('<span class="label label-warning">MongoDB</span>').fadeIn('slow').fadeOut('slow');
+          break;
+        case 6: $this.hide().html('<span class="label label-default">jQuery</span>').fadeIn('slow').fadeOut('slow');
+          break;
+      }
+    }
+    setTimeout(function(){
+      console.log('hi!');
+      $this.show();
+      $this.html('');
+    }, 1500);
+    // });
+  });
+//.animate({right: 20 }, 'slow')
+
 
     // setInterval(function () {
     //     $('.star-1').fadeOut(150).delay(2000).fadeIn(300).fadeOut(150).delay(1254);

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head ng-app="app">
+<head>
   <title>Tarabytes Of Code</title>
     <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="/css/main.css">
@@ -24,32 +24,56 @@
         <li class="button-margin"><a class="navbar-brand" href="#contact-info">Contact Info</a></li>
         </ul>
       </div>
-
     </div>
   </nav>
 
-  <div id="home" class="jumbotron" >
-    <div id="space"></div>
+  <div id="home" class="jumbotron">
+    <div class="head-row">
+      <div class="col-md-3 special"></div>
+      <div class="col-md-3 special"></div>
+      <div class="col-md-3 special"></div>
+      <div class="col-md-3 special"></div>
+    </div>
+    <div class="head-row">
+      <div class="col-md-3 special"></div>
+      <div class="col-md-3 special"></div>
+      <div class="col-md-3 special"></div>
+      <div class="col-md-3 special"></div>
+    </div>
+
+    <!-- <div id="space"></div> -->
     <div class="container">
       <h2 id="title" class="fadeInDown animated"> tarabytes of <span id="code" class="text-primary">code</span>.</h2>
+    </div>
+
+    <div class="head-row">
+      <div class="col-md-3 special"></div>
+      <div class="col-md-3 special"></div>
+      <div class="col-md-3 special"></div>
+      <div class="col-md-3 special"></div>
+    </div>
+    <div class="head-row">
+      <div class="col-md-3 special"></div>
+      <div class="col-md-3 special"></div>
+      <div class="col-md-3 special"></div>
+      <div class="col-md-3 special"></div>
     </div>
   </div>
 
   <div id="about-me" data-spy="scroll" data-target=".navbar">
-    <div class="container">
-
+    <div class="container-fluid">
       <h1 class="text-center section"> About Me </h1>
-
-      <div class="col-md-7">
+      <div class="col-md-1"></div>
+      <div class="col-md-6">
         <h3 class="text text-center about-me-head"> From Sci Fi to Comp Sci: </h3>
-        <h4 class="text">I'm an LA based web developer from New Jersey who first learned to code
+        <p class="text">I'm an LA based web developer from New Jersey who first learned to code
         in high school. I took a break from programming to attend USC's School of Cinematic
         Arts and pursue my dreams of working in Science Ficiton. After graduating, I worked as an assistant on
         <em>Battlestar Galactica</em> and as a Creative Executive at a Elijah Wood's <em>SpectreVision</em>. I rejuvenated my passion for
         programming this fall at General Assembly's Web Development Immersive and fell in love with coding all over
         again. I have an unhealthy love for DC superheroes, boardgames and a passion for cooking. Watch out - I can
         now pun in 4 languages!
-        </h4><br>
+        </p><br>
         <div class=" text-center"> <h3 class="text about-me-head"> Special Areas of Interest: </h3>
               <span class="label label-success">Front-end Javascript</span>
               <span class="label label-success">Back-end Javascript</span>
@@ -64,16 +88,13 @@
       <div class="col-md-5">
         <img src="assets/headshot.jpg" class="center-block" id="headshot">
       </div>
-
     </div>
   </div>
 
-
-
-  <div id="projects" data-spy="scroll" data-target=".navbar">
+  <div id="projects" class="grey" data-spy="scroll" data-target=".navbar">
     <div class="container-fluid">
         <h1 class="text-center section proj">Projects </h1>
-        <div class="row">
+        <div class="row grey">
           <div class="col-md-1"> </div>
           <div class="col-md-5">
             <h3 class="text-center"> Chef's Hat </h3>
@@ -92,25 +113,24 @@
               <span class="label label-primary">Bootstrap</span>
             </div>
           </div>
-          <div class="col-md-1"> </div>
-          <div class="col-md-4">
+          <!-- <div class="col-md-1"> </div> -->
+          <div class="col-md-5">
             <a target="_blank" href="https://spooky-monster-6600.herokuapp.com/"><img src="assets/chefshat-final.png" class="center-block project-img img-responsive"></a>
             <br>
           </div>
           <div class="col-md-1"> </div>
+           <br>
         </div>
 
-        <div class="row">
-          <br>
+        <div class="row" id="conshareto">
           <div class="col-md-1"> </div>
           <div class="col-md-5">
-             <h3 class="text-center"> ConShareto </h3>
-             <br>
+             <h3 class="text-center"> ConShareto </h3><br>
              <p class="text"> ConShareto is a concert-tracking website to help the avid music-lover find and keep track of concerts.
               This was a group project built by myself and 4 other students from my cohort at General Assembly. My role
               in the project was primarily working with MongoDB schemas, controllers as well as implementing Google Oauth.
               <div class=" text-center">
-              <br>
+                <br>
                 <span class="label label-primary">Node.js</span>
                 <span class="label label-primary">Express</span>
                 <span class="label label-primary">MondgoDB</span>
@@ -121,23 +141,19 @@
                 <span class="label label-primary">Bootstrap</span>
                 <span class="label label-primary">Google Oauth</span>
                 <span class="label label-primary">Jambase API</span>
-
-
               </div>
           </div>
-          <div class="col-md-1"> </div>
-          <div class="col-md-4">
+          <!-- <div class="col-md-1"> </div> -->
+          <div class="col-md-5">
             <a target="_blank" href="http://conshareto.com"><img src="assets/conshareto-final.png" class="center-block project-img img-responsive"></a>
-            <br>
           </div>
           <div class="col-md-1"> </div>
         </div>
 
-        <div class="row">
+        <div class="row grey">
           <br>
           <div class="col-md-1"> </div>
           <div class="col-md-5">
-
              <h3 class="text-center"> 2048 <em>Crisis</em> </h3>
              <br>
              <p class="text"> Help Superman recruit other members of the Justice League and fight Lex Luthor before it's too late!
@@ -146,17 +162,15 @@
              flexing my javascript muscles and writing original game logic.</p>
             <div class=" text-center">
               <br>
-                <span class="label label-primary">CSS</span>
-                <span class="label label-primary">HTML5</span>
-                <span class="label label-primary">jQuery</span>
-                <span class="label label-primary">Javascript</span>
-                <span class="label label-primary">Photoshop</span>
-
-
-              </div>
+              <span class="label label-primary">CSS</span>
+              <span class="label label-primary">HTML5</span>
+              <span class="label label-primary">jQuery</span>
+              <span class="label label-primary">Javascript</span>
+              <span class="label label-primary">Photoshop</span>
+            </div>
           </div>
-          <div class="col-md-1"> </div>
-          <div class="col-md-4">
+          <!-- <div class="col-md-1"> </div> -->
+          <div class="col-md-5">
             <a target="_blank" href="http://tarastrauss.github.io/2048"><img src="assets/2048-final.png" class="center-block project-img img-responsive"></a>
             <br>
           </div>
