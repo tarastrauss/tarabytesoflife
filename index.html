@@ -14,7 +14,7 @@
   <nav class="navbar navbar-default navbar-inverse navbar-fixed-top" data-spy="scroll">
     <div class="container-fluid">
       <div class="navbar-header">
-        <a href="#home" id="t" class="btn btn-primary navbar-btn">t.</a>
+        <a href="." id="t" class="btn btn-primary navbar-btn">t.</a>
       </div>
       <div class="navbar-right">
       <ul>
@@ -29,31 +29,39 @@
   </nav>
 
   <div id="home" class="jumbotron" >
-
     <div id="space"></div>
     <div class="container">
       <h2 id="title" class="fadeInDown animated"> tarabytes of <span id="code" class="text-primary">code</span>.</h2>
-
     </div>
-
   </div>
 
- <div class="container">
-    <div id="about-me">
+  <div id="about-me" data-spy="scroll" data-target=".navbar">
+    <div class="container">
 
       <h1 class="text-center section"> About Me </h1>
 
-      <div class="col-md-6">
-        <h4 class="text">I'm a Los Angeles based web developer from New Jersey who first learned to code as a kid by creating a
-        calculator in Visual Basic with my dad. I took a break from programming to attend USC's School of Cinematic
+      <div class="col-md-7">
+        <h3 class="text text-center about-me-head"> From Sci Fi to Comp Sci: </h3>
+        <h4 class="text">I'm an LA based web developer from New Jersey who first learned to code
+        in high school. I took a break from programming to attend USC's School of Cinematic
         Arts and pursue my dreams of working in Science Ficiton. After graduating, I worked as an assistant on
-        Battlestar Galactica and as a Creative Executive at a company that produces horror films. I rejuvenated my passion for
+        <em>Battlestar Galactica</em> and as a Creative Executive at a Elijah Wood's <em>SpectreVision</em>. I rejuvenated my passion for
         programming this fall at General Assembly's Web Development Immersive and fell in love with coding all over
         again. I have an unhealthy love for DC superheroes, boardgames and a passion for cooking. Watch out - I can
         now pun in 4 languages!
-        </h4>
+        </h4><br>
+        <div class=" text-center"> <h3 class="text about-me-head"> Special Areas of Interest: </h3>
+              <span class="label label-success">Front-end Javascript</span>
+              <span class="label label-success">Back-end Javascript</span>
+               <span class="label label-success">jQuery</span>
+              <br><br>
+              <span class="label label-success">MongoDB</span>
+              <span class="label label-success">Express</span>
+              <span class="label label-success">Anuglar</span>
+              <span class="label label-success">Node.js</span>
+            </div>
       </div>
-      <div class="col-md-6">
+      <div class="col-md-5">
         <img src="assets/headshot.jpg" class="center-block" id="headshot">
       </div>
 
@@ -83,12 +91,10 @@
               <span class="label label-primary">HTML5</span>
               <span class="label label-primary">Bootstrap</span>
             </div>
-
-
           </div>
           <div class="col-md-1"> </div>
           <div class="col-md-4">
-            <a href="https://spooky-monster-6600.herokuapp.com/"><img src="assets/chefshat.png" class="center-block project-img img-responsive"></a>
+            <a target="_blank" href="https://spooky-monster-6600.herokuapp.com/"><img src="assets/chefshat-final.png" class="center-block project-img img-responsive"></a>
             <br>
           </div>
           <div class="col-md-1"> </div>
@@ -121,7 +127,7 @@
           </div>
           <div class="col-md-1"> </div>
           <div class="col-md-4">
-            <a href="http://conshareto.com"><img src="assets/conshareto.png" class="center-block project-img img-responsive"></a>
+            <a target="_blank" href="http://conshareto.com"><img src="assets/conshareto-final.png" class="center-block project-img img-responsive"></a>
             <br>
           </div>
           <div class="col-md-1"> </div>
@@ -131,8 +137,8 @@
           <br>
           <div class="col-md-1"> </div>
           <div class="col-md-5">
-          <br><br>
-             <h3 class="text-center"> 2048 Crisis </h3>
+
+             <h3 class="text-center"> 2048 <em>Crisis</em> </h3>
              <br>
              <p class="text"> Help Superman recruit other members of the Justice League and fight Lex Luthor before it's too late!
              This project combines my passion for DC superheroes and love for puzzle games to make a themed game
@@ -151,7 +157,7 @@
           </div>
           <div class="col-md-1"> </div>
           <div class="col-md-4">
-            <a href="http://tarastrauss.github.io/2048"><img src="assets/2048.png" class="center-block project-img img-responsive"></a>
+            <a target="_blank" href="http://tarastrauss.github.io/2048"><img src="assets/2048-final.png" class="center-block project-img img-responsive"></a>
             <br>
           </div>
           <div class="col-md-1"> </div>
@@ -159,24 +165,23 @@
     </div>
   </div>
 
-  <div class="container-fluid">
-    <div id="contact-info" data-spy="scroll" data-target=".navbar">
-
+  <div id="contact-info" data-spy="scroll" data-target=".navbar">
+    <div class="container-fluid">
       <h1 class="text-center section" id="contact">Contact Info </h1>
 
       <div class="row">
         <div class="col-md-1"> </div>
         <div class="col-md-5 text-center">
-          <h4 class="text"> Need a website designed? Want to talk about cool logic games, or just have something punny to say? Give me a shout! </h4>
+          <h4 class="text"> Need a website designed? Want to talk about cool puzzle games, science fiction -- or just have something punny to say? Give me a shout! </h4>
           <br>
           <a href="mailto:tara.m.strauss@gmail.com" ><h4>tara.m.strauss@gmail.com</h4></a>
         </div>
         <div class="col-md-6 text-center">
           <h4 class="text"> You can also find me here or check out my work: </h4>
           <br>
-          <a href="http://github.com/tarastrauss"><img src="assets/github.png" class="github-img"></a>
-          <a href="http://linkedin.com/in/tarabytesofcode"><img src="assets/linkedin.png" class="contact-img"></a>
-          <a href="http://twitter.com/tarabytesoflife"><img src="assets/twitter.png" class="contact-img"></a>
+          <a target="_blank" href="http://github.com/tarastrauss"><img src="assets/github.png" class="github-img"></a>
+          <a target="_blank" href="http://linkedin.com/in/tarabytesofcode"><img src="assets/linkedin.png" class="contact-img"></a>
+          <a target="_blank" href="http://twitter.com/tarabytesoflife"><img src="assets/twitter.png" class="contact-img"></a>
 
 
         </div>
