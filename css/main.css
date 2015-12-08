@@ -155,6 +155,7 @@ body {
   width: 25%;
   height: 110px;
   display: inline-block; !important
+  visibility: hidden;
   /*color: rgba(0,0,0,0);*/
 
 }

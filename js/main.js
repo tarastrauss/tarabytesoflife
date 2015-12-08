@@ -2,30 +2,30 @@ console.log('loaded!');
 
 
 $(document).ready(function(){
-    $('.navbar a').click(function () {
-        $('.navbar a').removeClass('active');
-        $(this).addClass('active');
-     });
+  $('.navbar a').click(function () {
+      $('.navbar a').removeClass('active');
+      $(this).addClass('active');
+   });
  $special = $('.special');
 
-  $special.on('mouseover', function(){
+  $special.on('mouseover', function(event){
     console.log('moused over');
-    var $this = $(this);
+    var $this = $(event.target);
     var randomNum = Math.floor((Math.random() * 6) + 1);
     console.log(randomNum);
     if ($this.html() === ''){
       switch(randomNum) {
-        case 1: $this.hide().html('<span class="label label-primary fadeInDown animated">Bootstrap</span>').fadeIn('slow').fadeOut('slow');
+        case 1: $this.append('<span class="label label-primary">Bootstrap</span>').children().fadeIn('slow').fadeOut('slow');
           break;
-        case 2: $this.hide().html('<span class="label label-success">Javascript</span>').fadeIn('slow').fadeOut('slow');
+        case 2: $this.append('<span class="label label-success">Javascript</span>').children().fadeIn('slow').fadeOut('slow');
           break;
-        case 3: $this.hide().html('<span class="label label-info">Mean Stack</span>').fadeIn('slow').fadeOut('slow');
+        case 3: $this.append('<span class="label label-info">Mean Stack</span>').children().fadeIn('slow').fadeOut('slow');
           break;
-        case 4: $this.hide().html('<span class="label label-danger">Ruby on Rails</span>').fadeIn('slow').fadeOut('slow');
+        case 4: $this.append('<span class="label label-danger">Ruby on Rails</span>').children().fadeIn('slow').fadeOut('slow');
           break;
-        case 5: $this.hide().html('<span class="label label-warning">MongoDB</span>').fadeIn('slow').fadeOut('slow');
+        case 5: $this.append('<span class="label label-warning">MongoDB</span>').children().fadeIn('slow').fadeOut('slow');
           break;
-        case 6: $this.hide().html('<span class="label label-default">jQuery</span>').fadeIn('slow').fadeOut('slow');
+        case 6: $this.append('<span class="label label-default">jQuery</span>').children().fadeIn('slow').fadeOut('slow');
           break;
       }
     }
@@ -33,10 +33,10 @@ $(document).ready(function(){
       console.log('hi!');
       $this.show();
       $this.html('');
-    }, 1500);
+    }, 2000);
     // });
   });
-//.animate({right: 20 }, 'slow')
+// .animate({right: 20 }, 'slow')
 
 
     // setInterval(function () {
