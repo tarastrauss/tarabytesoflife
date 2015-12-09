@@ -15,17 +15,17 @@ $(document).ready(function(){
     console.log(randomNum);
     if ($this.html() === ''){
       switch(randomNum) {
-        case 1: $this.append('<span class="label label-primary">Bootstrap</span>').children().fadeIn('slow').fadeOut('slow');
+        case 1: $this.append('<span class="label label-primary">Bootstrap</span>').children().addClass('animated flipInX').fadeOut('slow');
           break;
-        case 2: $this.append('<span class="label label-success">Javascript</span>').children().fadeIn('slow').fadeOut('slow');
+        case 2: $this.append('<span class="label label-success">Javascript</span>').children().addClass('animated flipInX').fadeOut('slow');
           break;
-        case 3: $this.append('<span class="label label-info">Mean Stack</span>').children().fadeIn('slow').fadeOut('slow');
+        case 3: $this.append('<span class="label label-info">Mean Stack</span>').children().addClass('animated flipInX').fadeOut('slow');
           break;
-        case 4: $this.append('<span class="label label-danger">Ruby on Rails</span>').children().fadeIn('slow').fadeOut('slow');
+        case 4: $this.append('<span class="label label-danger">Ruby on Rails</span>').children().addClass('animated flipInX').fadeOut('slow');
           break;
-        case 5: $this.append('<span class="label label-warning">MongoDB</span>').children().fadeIn('slow').fadeOut('slow');
+        case 5: $this.append('<span class="label label-warning">MongoDB</span>').children().addClass('animated flipInX').fadeOut('slow');
           break;
-        case 6: $this.append('<span class="label label-default">jQuery</span>').children().fadeIn('slow').fadeOut('slow');
+        case 6: $this.append('<span class="label label-default">jQuery</span>').children().addClass('animated flipInX').fadeOut('slow');
           break;
       }
     }
@@ -33,7 +33,7 @@ $(document).ready(function(){
       console.log('hi!');
       $this.show();
       $this.html('');
-    }, 2000);
+    }, 1500);
     // });
   });
 // .animate({right: 20 }, 'slow')
