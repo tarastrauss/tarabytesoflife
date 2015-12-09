@@ -11,11 +11,11 @@ $(document).ready(function(){
   $special.on('mouseover', function(event){
     console.log('moused over');
     var $this = $(event.target);
-    var randomNum = Math.floor((Math.random() * 6) + 1);
+    var randomNum = Math.floor((Math.random() * 7) + 1);
     console.log(randomNum);
     if ($this.html() === ''){
       switch(randomNum) {
-        case 1: $this.append('<span class="label label-primary">Bootstrap</span>').children().addClass('animated flipInX').fadeOut('slow');
+        case 1: $this.append('<span class="label label-primary">CSS</span>').children().addClass('animated flipInX').fadeOut('slow');
           break;
         case 2: $this.append('<span class="label label-success">Javascript</span>').children().addClass('animated flipInX').fadeOut('slow');
           break;
@@ -26,6 +26,8 @@ $(document).ready(function(){
         case 5: $this.append('<span class="label label-warning">MongoDB</span>').children().addClass('animated flipInX').fadeOut('slow');
           break;
         case 6: $this.append('<span class="label label-default">jQuery</span>').children().addClass('animated flipInX').fadeOut('slow');
+          break;
+        case 7: $this.append('<span class="label" style="background-color:#7D2CB2">Angular</span>').children().addClass('animated flipInX').fadeOut('slow');
           break;
       }
     }
