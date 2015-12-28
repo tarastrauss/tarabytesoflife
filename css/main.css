@@ -6,11 +6,11 @@
 }
 
 body {
-  padding-top: 50px;
+  padding-top: 40px;
 }
 .navbar{
   height: 70px;
-  padding-top: 10px;
+  padding-top: 5px;
 }
 
 #navbar-text{
@@ -25,21 +25,45 @@ body {
   border-bottom: 0px;
 }
 .navbar a.active{
-  padding-bottom: 2px;
+
+  padding-bottom: 6px;
   border-bottom: 1px solid white;
   color: white;
 }
 
+header{
+  background-attachment:scroll;
+}
+
+a{color:#00a9c6; text-decoration:none;}
+a:hover{color:#666;}
+.btn,a,.btn:hover,a:hover {
+
+-webkit-transition: all 0.3s ease-in-out;
+-moz-transition: all 0.3s ease-in-out;
+-ms-transition: all 0.3s ease-in-out;
+-o-transition: all 0.3s ease-in-out;
+transition: all 0.3s ease-in-out;
+outline: none !important;
+}
+
 .button-margin{
   display: inline-block;
-  margin-right: 10px;
+  margin-right: 4px;
+  padding: 2px 8px 0 8px;
 }
 
-.navbar-right a:hover{
+/*.navbar-right a:hover{
   padding-bottom: 2px;
   border-bottom: 1px solid white;
+    -webkit-transition: all 0.3s ease-in-out;
+-moz-transition: all 0.3s ease-in-out;
+-ms-transition: all 0.3s ease-in-out;
+-o-transition: all 0.3s ease-in-out;
+transition: all 0.3s ease-in-out;
+outline: none !important;
 }
-
+*/
 
 
 #about-me, #projects, #contact-info{
@@ -68,10 +92,16 @@ body {
   box-shadow: 5px 5px grey;
   margin-top: 60px;
 }
+.section {
+  -webkit-transition: all .8s ease-in-out;
+  -moz-transition: all .8s ease-in-out;
+  -o-transition: all .8s ease-in-out;
+  transition: all .8s ease-in-out;
+}
 
 .project-img {
   /*box-shadow: 6px 6px grey;*/
-  margin-top: 10px;
+  margin-top: 26px;
 }
 
 .about-me-head{
@@ -123,7 +153,7 @@ body {
   font-size: 16px;
 }
 
-.section{
+.section-title{
   font-family: Maven Pro;
   padding-bottom: 5px;
   /*border: 2px solid #2E2E2E;*/

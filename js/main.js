@@ -2,6 +2,11 @@ console.log('loaded!');
 
 
 $(document).ready(function(){
+
+  $("#menu").vm_img();
+
+
+
   $('.navbar a').click(function () {
       $('.navbar a').removeClass('active');
       $(this).addClass('active');
@@ -15,27 +20,29 @@ $(document).ready(function(){
     console.log(randomNum);
     if ($this.html() === ''){
       switch(randomNum) {
-        case 1: $this.append('<span class="label label-primary">CSS</span>').children().addClass('animated flipInX').fadeOut('slow');
+        case 1: $this.append('<span class="label label-primary">CSS</span>').children().addClass('animated flipInX');
           break;
-        case 2: $this.append('<span class="label label-success">Javascript</span>').children().addClass('animated flipInX').fadeOut('slow');
+        case 2: $this.append('<span class="label label-success">Javascript</span>').children().addClass('animated flipInX');
           break;
-        case 3: $this.append('<span class="label label-info">Mean Stack</span>').children().addClass('animated flipInX').fadeOut('slow');
+        case 3: $this.append('<span class="label label-info">Mean Stack</span>').children().addClass('animated flipInX');
           break;
-        case 4: $this.append('<span class="label label-danger">Ruby on Rails</span>').children().addClass('animated flipInX').fadeOut('slow');
+        case 4: $this.append('<span class="label label-danger">Ruby on Rails</span>').children().addClass('animated flipInX');
           break;
-        case 5: $this.append('<span class="label label-warning">MongoDB</span>').children().addClass('animated flipInX').fadeOut('slow');
+        case 5: $this.append('<span class="label label-warning">MongoDB</span>').children().addClass('animated flipInX');
           break;
-        case 6: $this.append('<span class="label label-default">jQuery</span>').children().addClass('animated flipInX').fadeOut('slow');
+        case 6: $this.append('<span class="label label-default">jQuery</span>').children().addClass('animated flipInX');
           break;
-        case 7: $this.append('<span class="label" style="background-color:#7D2CB2">Angular</span>').children().addClass('animated flipInX').fadeOut('slow');
+        case 7: $this.append('<span class="label" style="background-color:#7D2CB2">Angular</span>').children().addClass('animated flipInX');
           break;
       }
     }
     setTimeout(function(){
-      console.log('hi!');
-      $this.show();
-      $this.html('');
-    }, 1500);
+      $this.children().fadeOut('slow')
+      setTimeout(function(){
+       $this.show();
+       $this.html('');
+      }, 300);
+    }, 1100);
     // });
   });
 // .animate({right: 20 }, 'slow')

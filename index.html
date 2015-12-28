@@ -6,7 +6,10 @@
     <link rel="stylesheet" type="text/css" href="/css/main.css">
     <link rel="stylesheet" type="text/css" href="/css/animate.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <!-- // <script src="/js/smartscroll.min.js"></script> -->
+    <script src="/js/vertical_navigation.js"></script>
     <script src="/js/main.js"></script>
+
 
 
 </head>
@@ -14,14 +17,21 @@
   <nav class="navbar navbar-default navbar-inverse navbar-fixed-top" data-spy="scroll">
     <div class="container-fluid">
       <div class="navbar-header page-scroll">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
         <a href="." id="t" class="btn btn-primary navbar-btn">t.</a> <span class="text" id="navbar-text">      A Portfolio Site for Tara Strauss </span>
       </div>
-      <div class="navbar-right">
+
+      <div id="menu" class="navbar-right collapse navbar-collapse">
       <ul>
-        <li class="button-margin"><a class="navbar-brand page-scroll" href="#about-me">About Me</a></li>
-        <li class="button-margin"><a class="navbar-brand page-scroll" href="#projects">Projects</a></li>
-        <li class="button-margin"><a class="navbar-brand page-scroll" href="#resume">Resume</a></li>
-        <li class="button-margin"><a class="navbar-brand page-scroll" href="#contact-info">Contact Info</a></li>
+        <li class="button-margin"><a class="navbar-brand page-scroll item_menu" href="#about-me">About Me</a></li>
+        <li class="button-margin"><a class="navbar-brand page-scroll item_menu" href="#projects">Projects</a></li>
+        <li class="button-margin"><a class="navbar-brand page-scroll item_menu" href="#resume">Resume</a></li>
+        <li class="button-margin"><a class="navbar-brand page-scroll item_menu" href="#contact-info">Contact Info</a></li>
         </ul>
       </div>
     </div>
@@ -60,9 +70,9 @@
     </div>
   </div>
 
-  <div id="about-me" data-spy="scroll" data-target=".navbar">
+  <div id="about-me" data-spy="scroll" data-target=".navbar" class="section">
     <div class="container-fluid">
-      <h1 class="text-center section"> About Me </h1><br>
+      <h1 class="text-center section-title"> About Me </h1><br>
       <div class="col-md-1"></div>
       <div class="col-md-6">
         <h3 class="text-center about-me-head"> From Sci Fi to Comp Sci: </h3>
@@ -91,9 +101,10 @@
     </div>
   </div>
 
-  <div id="projects" class="grey" data-spy="scroll" data-target=".navbar">
-    <div class="container-fluid">
-        <h1 class="text-center section proj">Projects </h1>
+
+  <div id="projects" class="grey" data-spy="scroll" data-target=".navbar" class="section">
+    <div class="container-fluid grey">
+        <h1 class="text-center section-title proj">Projects </h1>
         <div class="row grey">
           <div class="col-md-1"> </div>
           <div class="col-md-5">
@@ -107,8 +118,8 @@
               <span class="label label-primary">Ruby on Rails</span>
               <span class="label label-primary">PostgreSQL</span>
               <span class="label label-primary">Active Record</span>
-              <span class="label label-primary">CSS</span>
               <br><br>
+              <span class="label label-primary">CSS</span>
               <span class="label label-primary">HTML5</span>
               <span class="label label-primary">Bootstrap</span>
             </div>
@@ -122,21 +133,21 @@
            <br>
         </div>
 
-        <div class="row" id="conshareto">
+        <div class="row grey" id="conshareto">
           <div class="col-md-1"> </div>
           <div class="col-md-5">
              <h3 class="text-center"> ConShareto </h3>
              <p class="text"> ConShareto is a concert-tracking website to help the avid music-lover find and keep track of concerts.
               This was a group project built by myself and 4 other students from my cohort at General Assembly. My role
-              in the project was primarily working with MongoDB schemas, controllers as well as implementing Google Oauth.
+              in the project was primarily working with MongoDB schemas, controllers as well as implementing Google Oauth.</p>
               <div class=" text-center">
                 <br>
                 <span class="label label-primary">Node.js</span>
                 <span class="label label-primary">Express</span>
                 <span class="label label-primary">MondgoDB</span>
                 <span class="label label-primary">CSS</span>
-                <br><br>
                 <span class="label label-primary">HTML5</span>
+                <br><br>
                 <span class="label label-primary">Bootstrap</span>
                 <span class="label label-primary">Google Oauth</span>
                 <span class="label label-primary">Jambase API</span>
@@ -177,9 +188,10 @@
     </div>
   </div>
 
-  <div id="contact-info" data-spy="scroll" data-target=".navbar">
+
+  <div id="contact-info" data-spy="scroll" data-target=".navbar" class="section">
     <div class="container-fluid">
-      <h1 class="text-center section" id="contact">Contact Info </h1>
+      <h1 class="text-center section-title" id="contact">Contact Info </h1>
 
       <div class="row">
         <div class="col-md-1"> </div>
@@ -200,6 +212,7 @@
       </div>
     </div>
   </div>
+
 
 </body>
 </html>
