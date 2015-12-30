@@ -5,12 +5,24 @@ $(document).ready(function(){
 
   $("#menu").vm_img();
 
+  $('body').scrollspy({ target: '#menu', offset: 80 })
+  // $('#navbar-links').scrollspy();
 
+  // $('.button-margin a').click(function () {
+  //     $('.button-margin a').removeClass('active');
+  //     $(this).addClass('active');
+  //  });
 
-  $('.navbar a').click(function () {
-      $('.navbar a').removeClass('active');
-      $(this).addClass('active');
-   });
+// $('[data-spy="scroll"]').each(function () {
+//   var $spy = $(this).scrollspy('refresh')
+// })
+
+  // $('#menu').on('activate.bs.scrollspy', function () {
+  // // do something…
+  //       $('.button-margin a').removeClass('active');
+  //     $(this).addClass('active');
+  // })
+
  $special = $('.special');
 
   $special.on('mouseover', function(event){
