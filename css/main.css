@@ -15,19 +15,10 @@ body {
 }
 .navbar{
   height: 62px;
-  background-color: 333333;
-
-}
-
-#navbar-links {
-  background-color: 333333;
-
-
 }
 
 .nav {
   display: inline-block;
-  background-color: 333333;
 }
 
 #navbar-text{
@@ -43,14 +34,11 @@ body {
   border-bottom: 0px;
 }
 
-
-.nav > .active > a  {
-  border-bottom: 1px solid white;
-  color: white;
-  height: 100%;
-
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+  background-color: #333333;
+  transition: 0.7s all linear;
+  height: 62px;
 }
-
 
 
 #scroll {
@@ -58,14 +46,6 @@ body {
   overflow-y: scroll;
 }
 
-
-/*a {
-  color:#00a9c6; text-decoration:none;
-}
-
-a:hover {
-  color:#666;
-}*/
 .btn:hover,a:hover {
 
 -webkit-transition: all 0.3s ease-in-out;
@@ -77,48 +57,24 @@ outline: none !important;
 
 }
 
+.navbar-inverse .navbar-nav > li > a {
+  padding-top: 20px;
+  height: 62px;
+}
+
 .button-margin{
   display: inline-block;
   margin-right: 4px;
   padding: 0 8px 0 8px;
   color: white;
-  background-color: 333333;
   height: 100%;
   position: relative;
 
 }
 
 #menu {
-  height: 100%;
-  position: relative;
-  vertical-align: bottom;
-  line-height: 80%;
+  height: 62px;
 }
-
-.navbar-inverse .navbar-nav>li>a:focus {
-
-    outline:none;
-  color: grey;
-
-}
-
-.navbar-inverse .navbar-nav>li>a:active {
-
-  background-color: none;
-
-}
-
-/*.navbar-right a:hover{
-  padding-bottom: 2px;
-  border-bottom: 1px solid white;
-    -webkit-transition: all 0.3s ease-in-out;
--moz-transition: all 0.3s ease-in-out;
--ms-transition: all 0.3s ease-in-out;
--o-transition: all 0.3s ease-in-out;
-transition: all 0.3s ease-in-out;
-outline: none !important;
-}
-*/
 
 
 #about-me, #projects, #contact-info{
@@ -165,7 +121,7 @@ outline: none !important;
 
 .project-img {
   /*box-shadow: 6px 6px grey;*/
-  margin-top: 26px;
+  margin-top: 20px;
 }
 
 .about-me-head{
@@ -272,6 +228,25 @@ outline: none !important;
   width: 100%;
   /*overflow: hidden;*/
 
+}
+
+@media (max-width: 1000px) {
+  #about-me {
+    height: 950px;
+  }
+  .text {
+    max-width: 550px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .project-img {
+    max-width: 500px;
+    margin-top: 40px;
+  }
+  .row {
+    margin-bottom: 30px;
+  }
 }
 
 
