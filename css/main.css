@@ -97,8 +97,10 @@ outline: none !important;
 }
 
 #home{
-  height: 100vh;
+  height: 95vh;
+  width: 100%;
   display: block;
+  padding-bottom: -62px;
 }
 
 #headshot{
@@ -156,10 +158,11 @@ outline: none !important;
   width: 100%;
   height: 60px;
   margin-bottom: 45px;
-  margin-top: -20px;
+  margin-top: -10vh;
   font-size: 45px;
   text-shadow: 2px 2px grey;
-
+  display: inline-block;
+  position: absolute;
 }
 
 .text {
@@ -209,16 +212,15 @@ outline: none !important;
 }
 
 .special{
-  height: 110px;
+  height: 100%;
   display: inline-block; !important
   visibility: hidden;
   /*color: rgba(0,0,0,0);*/
   text-align: center;
-
 }
 
 .head-row{
-  height: 110px;
+  height: 22%;
   width: 100%;
   /*overflow: hidden;*/
 
