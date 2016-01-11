@@ -23,6 +23,12 @@ $(document).ready(function(){
   //     $(this).addClass('active');
   // })
 
+$(document).on('click','.navbar-collapse.in',function(e) {
+    if( $(e.target).is('a') && $(e.target).attr('class') != 'dropdown-toggle' ) {
+        $(this).collapse('hide');
+    }
+});
+
  $special = $('.special');
 
   $special.on('mouseover', function(event){
