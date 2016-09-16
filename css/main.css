@@ -17,15 +17,10 @@ body {
   height: 62px;
 }
 
-/*.nav {
-  display: inline-block;
-}*/
-
 #navbar-text{
   color: #BDBDBD;
   font-size: 18px;
   margin-left:10px;
-
 }
 
 #t{
@@ -71,20 +66,13 @@ outline: none !important;
   position: relative;
 }
 
-/*#menu {
-  height: 62px;
-}*/
 
 
 #about-me, #projects, #contact-info{
   position: relative;
-
-  /*overflow-y: scroll;*/
   color: #2E2E2E;
-/*  margin-top: -60px;
-  margin-bottom: 20px;*/
   margin-top: -70px;
-  margin-bottom: 94px;
+  margin-bottom: 134px;
   padding-top: 60px;
 }
 
@@ -104,12 +92,12 @@ outline: none !important;
 }
 
 #headshot{
-
   border-radius: 50%;
   box-shadow: 5px 5px 5px grey;
   margin-top: 30px;
   height: 300px;
 }
+
 .section {
   -webkit-transition: all .8s ease-in-out;
   -moz-transition: all .8s ease-in-out;
@@ -128,7 +116,6 @@ outline: none !important;
 
 #projects{
   height: 100%;
-  margin-top: -80px;
 }
 
 #about-me{
@@ -173,12 +160,11 @@ outline: none !important;
 .section-title{
   font-family: Maven Pro;
   padding-bottom: 5px;
-  /*border: 2px solid #2E2E2E;*/
   width: 195px;
   margin: 0 auto;
   border-radius: 10px;
   color: #E27403;
-  margin-top: 40px;
+  margin-top: 30px;
   margin-bottom: 30px;
   background: #F2F2F2;
   box-shadow: 3px 3px 3px grey;
@@ -208,27 +194,23 @@ outline: none !important;
 
 #code{
   font-family: Menlo;
-/*  color: #2E2EFE;*/
 }
 
 .special{
   height: 100%;
   display: inline-block; !important
   visibility: hidden;
-  /*color: rgba(0,0,0,0);*/
   text-align: center;
 }
 
 .head-row{
   height: 22%;
   width: 100%;
-  /*overflow: hidden;*/
-
 }
 
 @media (max-width: 1000px) {
   #about-me {
-    height: 950px;
+    height: 1000px;
   }
   .text {
     max-width: 550px;
@@ -254,12 +236,6 @@ outline: none !important;
 
 
 @media (max-width: 768px) {
-/*    .navbar-header {
-        float: none;
-    }*/
-/*    .navbar-right {
-        float: none !important;
-    }*/
     .navbar-toggle {
         display: block;
     }
@@ -322,5 +298,15 @@ outline: none !important;
 
 }
 
+.flavoUr {
+  width: 400px;
+  margin-top: 70px;
+}
+
+#soon {
+  text-align: center;
+  margin: 0 auto;
+  float: middle;
+}
 
 

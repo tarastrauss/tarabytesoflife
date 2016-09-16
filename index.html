@@ -9,9 +9,6 @@
     <link rel="stylesheet" type="text/css" href="/css/animate.css">
     <script src="/js/vertical_navigation.js"></script>
     <script src="/js/main.js"></script>
-    <!-- // <script src="/js/smartscroll.min.js"></script> -->
-
-
 
 </head>
 <body id="scroll" data-spy="scroll" data-target="#menu">
@@ -30,7 +27,7 @@
       <div id="menu"  class="nav navbar-right collapse navbar-collapse">
         <ul id="navbar-links" class="nav navbar-nav navbar-right" >
           <li ><a class="button-margin white navbar-brand page-scroll item_menu" href="#about-me">About Me</a></li>
-          <li ><a class="button-margin white navbar-brand page-scroll item_menu" href="#projects">Projects</a></li>
+          <li ><a class="button-margin white navbar-brand page-scroll item_menu" href="#projects">Portfolio</a></li>
           <li ><a class="button-margin white navbar-brand page-scroll item_menu" href="/assets/tStrauss_Resume.pdf">Resume</a></li>
           <li ><a class="button-margin white navbar-brand page-scroll item_menu" href="#contact-info">Contact Info</a></li>
 
@@ -74,7 +71,6 @@
     </div>
   </div>
 
-<!-- <div id="scroll" data-spy="scroll" data-target="#menu"> -->
   <div id="about-me" class="section">
     <div class="container-fluid">
       <h1 class="text-center section-title"> About Me </h1><br>
@@ -83,24 +79,29 @@
         <h3 class="text-center about-me-head"> From Sci Fi to Comp Sci: </h3>
         <p class="text">I'm an LA based web developer from New Jersey who first learned to code
         in high school. I took a break from programming to attend USC's School of Cinematic
-        Arts and pursue my dreams of working in Science Fiction. After graduating, I worked as an assistant on
+        Arts and pursue my dreams of working in Science Fiction. I had the opportunity to work as an assistant on
         <em>Battlestar Galactica</em> and as a Creative Executive at a Elijah Wood's <em>SpectreVision</em>. I rejuvenated my passion for
-        programming this fall at General Assembly's Web Development Immersive and fell in love with coding all over
-        again. I have an unhealthy love for DC superheroes, boardgames and a passion for cooking. Watch out - I can
-        now pun in 4 languages!
+        programming last fall at General Assembly's Web Development Immersive and fell in love with coding all over
+        again.
+        <br><br>
+        Since graduating from General Assembly, I've been working on <em>The Creative Cartel's</em> post-production digital
+        pipeline software <a target="_blank" href="http://joustco.com/">JOUST</a>. Originally hired as a QA Automation Engineer, I worked my way up to Full Stack Developer. I
+        have an unhealthy love for DC superheroes, boardgames and a passion for cooking. Watch out - I can now pun in
+        4 languages!
+
         </p><br>
         <div class=" text-center"> <h3 class="text-center about-me-head"> Special Areas of Interest: </h3><br>
-              <span class="label label-success">Front-end Javascript</span>
-              <span class="label label-success">Back-end Javascript</span>
-               <span class="label label-success">jQuery</span>
+              <span class="label label-success">ES2015</span>
+              <span class="label label-success">MEAN Stack</span>
+               <span class="label label-success">Python</span>
               <br><br>
-              <span class="label label-success">MongoDB</span>
-              <span class="label label-success">Express</span>
+              <span class="label label-success">Django</span>
+              <span class="label label-success">React</span>
               <span class="label label-success">Anuglar</span>
-              <span class="label label-success">Node.js</span>
+              <span class="label label-success">Selenium Testing</span>
             </div>
       </div>
-      <div class="col-md-5">
+      <div class="col-md-5" id="headshot-container">
         <img src="assets/headshot2.jpg" class="center-block" id="headshot">
       </div>
     </div>
@@ -109,11 +110,40 @@
 
   <div id="projects" class="grey" data-spy="scroll" data-target=".navbar" class="section">
     <div class="container-fluid grey">
-        <h1 class="text-center section-title proj">Projects </h1>
+        <h1 class="text-center section-title proj">Portfolio </h1>
         <div class="row grey">
           <div class="col-md-1"> </div>
           <div class="col-md-5">
-            <h3 class="text-center"> Inform </h3>
+            <h3 class="text-center"> flavoUr </h3>
+
+            <p class="text"> flavoUr is an application that allows users to search for local culinary school graduates
+            who sell food out of their home. This is a portfolio project I've been working on to teach myself React
+            and display my skills with Python and Django.
+            <br><br>
+            <div class=" text-center">
+              <span class="label label-primary">React</span>
+              <span class="label label-primary">Python</span>
+              <span class="label label-primary">Django</span>
+              <br><br>
+              <span class="label label-primary">ES2015</span>
+              <span class="label label-primary">Webpack</span>
+              <span class="label label-primary">Babel</span>
+              <span class="label label-primary">Facebook OAuth</span>
+            </div>
+          </div>
+          <!-- <div class="col-md-1"> </div> -->
+          <div class="col-md-5">
+            <img src="assets/flavoUr_logo.png" class="center-block project-img img-responsive flavoUr">
+            <br>
+            <div id="soon">COMING SOON!</div></p>
+          </div>
+          <div class="col-md-1"> </div>
+           <br>
+        </div>
+        <div class="row grey">
+          <div class="col-md-1"> </div>
+          <div class="col-md-5">
+            <h3 class="text-center"><a target="_blank" href="http://inform-yourself.herokuapp.com/"> Inform </a></h3>
 
             <p class="text"> Inform is an application that uses gamification to encourage users to be informed on both sides
               of any political issue. The application keeps track of how many articles users read on any given topic, and uses
@@ -145,7 +175,7 @@
         <div class="row grey">
           <div class="col-md-1"> </div>
           <div class="col-md-5">
-            <h3 class="text-center"> Chef's Hat </h3>
+            <h3 class="text-center"><a target="_blank" href="https://spooky-monster-6600.herokuapp.com/"> Chef's Hat </a></h3>
 
             <p class="text"> Chef's Hat is an app geared towards helping users share their secret family recipes with their friends and
             family. Emphasis was put on user authentication and authorization - don't let those family secrets get out
@@ -173,7 +203,7 @@
         <div class="row grey" id="conshareto">
           <div class="col-md-1"> </div>
           <div class="col-md-5">
-             <h3 class="text-center"> ConShareto </h3>
+             <h3 class="text-center"><a target="_blank" href="http://conshareto.com"> ConShareto </a></h3>
              <p class="text"> ConShareto is a concert-tracking website to help the avid music-lover find and keep track of concerts.
               This was a group project built by myself and 4 other students from my cohort at General Assembly. My role
               in the project was primarily working with MongoDB schemas, controllers as well as implementing Google Oauth.</p>
@@ -201,7 +231,7 @@
           <br>
           <div class="col-md-1"> </div>
           <div class="col-md-5">
-             <h3 class="text-center"> 2048 <em>Crisis</em> </h3>
+             <h3 class="text-center"><a target="_blank" href="http://tarastrauss.github.io/2048"> 2048 <em>Crisis</em> </a></h3>
              <p class="text"> Help Superman recruit other members of the Justice League and fight Lex Luthor before it's too late!
              This project combines my passion for DC superheroes and love for puzzle games to make a themed game
              clone of the modern classic, 2048. This was the first web project I ever made. My emphasis went to
@@ -233,7 +263,7 @@
       <div class="row">
         <div class="col-md-1"> </div>
         <div class="col-md-5 text-center">
-          <h4 class="text"> Need a website designed? Want to talk about cool puzzle games, science fiction -- or just have something punny to say? Give me a shout! </h4>
+          <h4 class="text"> Need a web app designed? Want to talk about cool puzzle games, science fiction -- or just have something punny to say? Give me a shout! </h4>
           <br>
           <a href="mailto:tara.m.strauss@gmail.com" ><h4>tara.m.strauss@gmail.com</h4></a>
         </div>
